@@ -1,0 +1,25 @@
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
+const app = express();
+
+app.use(express.static(path.join(__dirname, 'secret')));
+app.use(express.static(path.join(__dirname, 'resources')));
+
+
+app.get("/archive", (req,res) =>{
+    res.status(200).sendFile(path.resolve('./secret/superSecretContent.html'))
+});
+
+app.get("*", (req,res) =>{
+    res.status(200).sendFile(path.resolve('./resources/not-found.html'))
+});
+
+const port = 5001;
+app.listen(port, ()=>{
+    console.log(`Server started on port ${port}`)
+});
+
+
+//Content Lenght in BurpSuite instead of status code
+

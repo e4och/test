@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('https://www.icegif.com/wp-content/uploads/2023/12/icegif-96.gif');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(45deg, #97a3e841, #76d1e8ae);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #ff0040, 4px 4px #ff00b8;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome-message {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f07c9d;
+    box-shadow: 0 0 10px #ebdbdf, 0 0 20px #ff00b8;
+    animation: neon-glow 1.5s infinite alternate;
+    max-width: 73%;
+    word-wrap: break-word;
+    backdrop-filter: blur(4px); /* Apply backdrop blur */
+    line-height: 2.6; /* Adjust line height */
+}
+
+.welcome-message h2 {
+    font-size: 29px;
+    color: #f7bcc1;
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    font-size: 21px;
+    color: #b6f5e6;
+    text-shadow: 0 0 88px #f2aeb4, 0 0 35px #000000;
+    display: inline;
+    line-height: 1.5;
+}
+
+.cursor {
+    font-weight: bold;
+    animation: blink 0.8s step-end infinite;
+    display: inline;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    animation: neon-flicker 1.5s infinite alternate;
+
+}
+
+@keyframes neon-flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
+.cta-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ff0048;
+    border-radius: 5px;
+    background-color: #000;
+    color: #00ffea;
+    font-size: 43px;
+    text-decoration: none;
+    text-shadow: 0 0 2px #fe0000;
+    box-shadow: 0 0 10px #e60505, 0 0 20px #0fc9c9;
+    overflow: hidden; /* Hide overflow to contain pseudo-element */
+}
+
+.cta-button::before {
+    content: attr(data-text); /* Use data-text attribute for content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #00ffea;
+    width: 100%; /* Ensure full width */
+    opacity: 0.4;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
+
+
+
+.cta-button:hover {
+    background-color: #fb034d;
+    color: #000;
+}
+
+footer {
+    background: linear-gradient(45deg, #00000039, #000000);
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+@keyframes neon-glow {
+    from {
+        box-shadow: 0 0 2px #080808, 0 0 4px #080808, 0 0 6px #080808, 0 0 8px #080808;
+    }
+    to {
+        box-shadow: 0 0 2px #5d5d5d, 0 0 4px #5d5d5d, 0 0 6px #5d5d5d, 0 0 8px #5d5d5d;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

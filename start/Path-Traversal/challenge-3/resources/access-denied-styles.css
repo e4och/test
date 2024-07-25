@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url("https://cdna.artstation.com/p/assets/images/images/036/822/576/original/karina-formanova-cover-final.gif?1618727960");
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(45deg, #02348c9a, #00907885);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #3e88ff, 4px 4px #6fff90;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#flag-display {
+    text-align: center;
+    border: 5px solid rgba(253, 254, 254, 0.653); /* Thin neon blue border */
+    padding: 0px; /* Space between the border and the content */
+}
+
+.gif-container {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+.gif-background {
+    width: 800px;
+    height: 500px;
+    display: block;
+    border-radius: 10px;
+}
+
+.flag-box {
+    position: absolute;
+    bottom: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(247, 2, 2, 0.312);
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 600px;
+}
+
+.flag-box p {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #fff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
+
+footer {
+    background: linear-gradient(45deg, #02348c9a, #00907885);
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5rem;
+}

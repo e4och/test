@@ -1,0 +1,11 @@
+{
+  "name": "challenge-3",
+  "version": "1.0.0",
+  "flag": "ZO{UWT-Z3JY37Z-M0BUK}",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Enoch",
+  "license": "ISC"
+}

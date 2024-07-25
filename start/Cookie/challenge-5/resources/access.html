@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie-1</title>
+    <link rel="stylesheet" href="./access-styles.css">
+</head>
+<body>
+    <header>
+        <h1>SHELLOCK_CTF</h1>
+    </header>
+    <main>
+        <section id="flag-display">
+            <div class="small-box">
+                <p class="welcome">YOU MADE IT!</p>
+            </div>
+            <div class="gif-container">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3dpZHh3emUxM3EwNTJ2dmY3c2EwN3Jra2hzejBvYzJydWQ5M2I3YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YKFR0dauxYEzJA8J6U/giphy.webp" alt="Retro GIF" class="gif-background">
+                <div class="flag-box" onclick="copyFlag()">
+                    <p>hh{C00K1E_3XP1RY_M@N1PULA710N}</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function copyFlag() {
+            // Get the text from the <p> element
+            var flagText = document.querySelector('.flag-box p').innerText;
+
+            // Create a temporary textarea element
+            var tempTextarea = document.createElement('textarea');
+            tempTextarea.value = flagText;
+            
+            // Append the textarea to the body and select its content
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the selected text
+            document.execCommand('copy');
+
+            // Remove the temporary textarea
+            document.body.removeChild(tempTextarea);
+
+            // Optional: Alert the user that the flag has been copied
+            alert('Flag copied to clipboard!');
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 SHELLOCK_CTF</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('https://64.media.tumblr.com/6b9d5fbcc7d6ebe2c3636ed25a550787/f02e19988b551a66-43/s1280x1920/311bc898f00d0bea349351a7a36333f9f659f645.gif');
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(45deg, #1d3137ca, #5b96a1c9);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #049994;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #3b3838, 4px 4px #03f8e3;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#flag-display {
+    text-align: center;
+    border: 5px solid rgba(1, 199, 254, 0.268); /* Thin neon blue border */
+    padding: 0px; /* Space between the border and the content */
+    border-radius: 0; /* Sharp edges */
+}
+
+.gif-container {
+    position: relative;
+    display: inline-block;
+    width: 1000px;
+}
+
+.gif-background {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.flag-box {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+}
+
+.flag-box p {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #fff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
+
+footer {
+    background: linear-gradient(45deg,  #1d3137ca, #5b96a1c9);
+    text-align: center;
+    padding: 10px 0;
+    border-top: 3px solid #049994;
+    color: #fff;
+    text-shadow: 2px 2px #3b3838, 4px 4px #03f8e3;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.7rem;
+}

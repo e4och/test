@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Instructions!</h2>
+    <p>Welcome to the Backup File Discovery Challenge! 
+    Your objective is to locate and access a hidden backup file on the server.</p>
+    <br>
+    <ol>
+        <li>You will be navigating to a specific challenge page where a backup file is stored.</li>
+        <br>
+        <li>In the URL, you'll find a parameter named <code>file</code>. Your task is to bruteforce this parameter with various file names to locate the correct backup file.</li>
+        <br>
+        <li>The backup file follows the format <code>&lt;filename&gt;.zip</code>. Use tools like Burp Suite to capture requests and bruteforce the <code>file</code> parameter.</li>
+        <br>
+        <li>Look for HTTP status code <code>200 OK</code> in Burp Suite responses to identify successful attempts.</li>
+        <br>
+        <li>Incorrect attempts will result in an HTTP status code <code>404 Not Found</code>.
+        <br>
+        <br>
+        <li>The wordlist for brute-forcing backup files is provided. Click the button below to view it.</li>
+    </li>
+    </ol>
+    <br>
+    
+    <div class="navigate">
+        <a id="button" href="./index.html">Click to Navigate</a>
+    </div>
+
+    <div class="wordlist">
+        <a id="button" href="./backup-fileNames.txt">Click to view the wordlist</a>
+    </div>
+    
+    <script>
+        document.getElementById('button').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '/backup?file=backup_file_name_goes_here.zip';
+        });
+    </script>
+</body>
+</html>

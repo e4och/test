@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('https://64.media.tumblr.com/cca4f06484b447c0687f0325af5b38c9/428a8db1dc8ae92f-87/s1280x1920/7c751558b1d93e15c2d885cff2162ddb95059b8d.gif');
+    background-size: cover, cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(45deg, #02c4f97d, #efff5f22);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #12121263;
+    box-shadow: 0 1px 2px rgba(14, 208, 234, 0.356);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #03fbca, 4px 4px rgb(243, 2, 2);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#flag-display {
+    text-align: center;
+    padding: 0px; /* Space between the border and the content */
+    border-radius: 0; /* Sharp edges */
+}
+
+.gif-container {
+    position: relative;
+    display: inline-block;
+    width: 900px;
+    right: 240px;
+    height: 100px;
+}
+
+.gif-background {
+
+    width: 1500px;
+    height: auto;
+    display: block;
+}
+
+.flag-box {
+    position: absolute;
+    bottom: 100%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid #fdff78;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 1000px;
+}
+
+.flag-box p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #fff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
+
+footer {
+    background: linear-gradient(45deg, #8acff48d, #06f4897f);
+    text-align: center;
+    padding: 10px 0;
+    border-top: 3px solid #08070895;
+    color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px #03fbca, 4px 4px rgb(243, 2, 2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.7rem;
+    
+}

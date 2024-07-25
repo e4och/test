@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('./4.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid #09e1e5;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #11e906, 0 0 30px #ff00b8;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00b8, 0 0 15px #e2496fa3, 0 0 20px #101010, 0 0 30px #ff0040;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.9rem;
+}
+
+ol {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #fff;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.navigate {
+    position: relative;
+    right: 490px;
+    margin-top: 30px;
+}
+
+.wordlist {
+    position: absolute;
+    bottom: 39px;
+    left: 1050px;
+    margin-top: 30px;
+}
+
+
+#button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9003e;
+    color: #fcfcfc;
+    border: 2px solid #ff0000;
+    border-radius: 3px;
+    font-size: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+    text-shadow: 0 0 5px #000000, 0 0 10px #ff005d, 0 0 10px #ff0033, 0 0 10px #ff0051;
+    box-shadow: 0 0 10px #ff005d, 0 0 10px #ff0033, 0 0 10px #ff0051;
+    transition: background-color 0.3s ease;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+#button:hover {
+    background-color: #f01053da;
+    color: #000000;
+}
+

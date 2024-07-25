@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('./4.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    font-size: 60px;
+    top: 15%;
+    left: 24%;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00b8, 0 0 15px #ff0040, 0 0 20px #ff0040, 0 0 30px #ff0040, 0 0 40px #ff0040;
+}
+
+.container {
+    width: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid #ff00b8;
+    box-shadow: 0 0 15px #ff0040, 0 0 30px #ff00b8;
+    border-radius: 10px;
+    animation: neon-glow 1.5s infinite alternate;
+    margin-top: 40px; /* Adjusted margin for spacing */
+}
+
+.download-button {
+    margin: 20px;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #00fff7;
+    border: 2px solid #ff0000;
+    border-radius: 3px;
+    font-size: 26px;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 10px #ff005d, 0 0 10px #ff0033, 0 0 10px #ff0051;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #f01053da;
+    color: #000000;
+}
+
+.hint {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust background color opacity */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 0 5px #000000;
+}

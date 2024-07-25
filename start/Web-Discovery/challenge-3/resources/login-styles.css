@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('https://64.media.tumblr.com/6b9d5fbcc7d6ebe2c3636ed25a550787/f02e19988b551a66-43/s1280x1920/311bc898f00d0bea349351a7a36333f9f659f645.gif');
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.login-container {
+    width: 790px;
+    padding: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid #09b4f867;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 104px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #00fff7;
+    border-radius: 3px;
+    background-color: #000000;
+    color: #12c0f0;
+    font-size: 46px;
+    box-sizing: border-box;
+    text-shadow: 0 0 5px #00fff7;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4df7a7;
+    border-radius: 3px;
+    background-color: #000000;
+    color: #00fff7;
+    font-size: 26px;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #000000;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #00a4ad62;
+    color: #fafafa;
+}
+
+.error-message {
+    color: #ff0040;
+    margin-top: 50px;
+    font-size: 24px;
+    text-shadow: 0 0 0px #171616, 0 0 10px #0a0a0a, 0 0 0px #ff0040, 0 0 10px #ff0040, 0 0 0px #ff0040, 0 0 0px #ff0040;
+}
+
+
